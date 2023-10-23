@@ -1,0 +1,257 @@
+.home-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+  background-color: #e5e5f7;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 1400px
+    ),
+    repeating-linear-gradient(#444cf755, #b4b8f9);
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.home-navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 90%;
+  flex-direction: row;
+  padding: 8px 20px;
+  background: transparent;
+  transform: translateX(-50%);
+  border-radius: 40px;
+  backdrop-filter: blur(15px);
+  background: rgb(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.home-navigation-bar img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.home-navigation-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.home-navigation-button {
+  padding: 7px 15px;
+  border-radius: 30px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.home-navigation-button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.dark-button {
+  color: whitesmoke;
+  background-color: black;
+  gap: 10px;
+}
+
+.mercedes-home-background {
+  width: 1200px;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.home-banner {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  transform: translateY(-50%);
+}
+
+.home-banner-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-banner-glass-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  flex-direction: row;
+  border-radius: 30px;
+  display: flex;
+  padding: 30px;
+  gap: 15px;
+}
+
+.home-banner-glass-wrapper div {
+  padding: 20px;
+  flex-shrink: 1;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rent-now-button {
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: #b4b8f9;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.rent-now-button:hover {
+  background-color: #969bf1;
+}
+
+.home-services-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home-services-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-services-text-wrapper :is(h1, p) {
+  text-align: center;
+}
+
+.home-services-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.globe-image {
+  filter: drop-shadow(0px 0px 50px black) brightness(1000%);
+  width: 90%;
+}
+
+.about-us-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-us-container :is(h1, p) {
+  text-align: center;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: transparent;
+  border-bottom: 1px;
+  border-style: double;
+  position: relative;
+  z-index: 3;
+}
+
+.footer {
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+
+.footer img {
+  height: 30px;
+  filter: brightness(1000%);
+}
+
+.footer p {
+  color: white;
+}
+
+.footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .mercedes-home-background {
+    width: 800px;
+  }
+}
+
+@media (max-width: 550px) {
+  .home-navigation-buttons-container {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .mercedes-home-background {
+    width: 600px;
+  }
+}
+
+@media (max-width: 330px) {
+  .mercedes-home-background {
+    width: 500px;
+  }
+}
